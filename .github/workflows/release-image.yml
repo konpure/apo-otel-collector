@@ -81,7 +81,7 @@ jobs:
           context: .
           platforms: linux/arm64
           push: true
-          tags: ${{ env.OTEL_COLLECTOR_IMAGE_FULL_NAME_ARM64 }}
+          tags: ${{ env.OTEL_COLLECTOR_IMAGE_FULL_TAG_ARM64 }}
 
       - name: push tag
         if: github.event_name == 'workflow_dispatch'
